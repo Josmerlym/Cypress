@@ -1,0 +1,27 @@
+npx cypress open  Para lanzar el aplicativo y se ejecute la prueba
+
+node_modules\.bin\cypress run Ejecuta todos los casos de prueba sin abrir el navegador
+                               Da los resultados de todos los tests ejecutados, screenshots, si paso, fallo etc
+
+npx cypress run (Lo mismo que la linea anterior pero mas corto el comando)
+
+npx cypress run -headed Corre todos los test desde el navegador
+
+npx cypress run --browser chrome
+
+npx cypress run --spec "cypress\e2e\1.Curso_Cypress_Udemy\Asserts.cy.js" Correr un js especifico
+
+
+ npx cypress run --spec "cypress\e2e\1.Curso_Cypress_Udemy\Carpeta1\*" Ejecutar todos los test de 1 carpeta
+
+
+ ////AGREGAR ESTO EN TU CODIGO CUANDO FALLA ALGUNA EXCEPTION
+
+ Cypress.on('uncaught:exception', () => false)
+
+ ////
+
+ npx cypress run --spec "cypress/e2e/1.Curso_Cypress_Udemy/Type_Tab.cy.js"
+
+
+
